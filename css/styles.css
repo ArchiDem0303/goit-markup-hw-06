@@ -709,12 +709,20 @@ body {
     padding-left: 42px;
     padding-right: 10px;
     background-color: transparent;
+    transition: border-color 250ms linear;
+}
+.modal-input:hover + .input-icon {
+    fill: var(--accent-color);
+}
+.modal-input:hover {
+    border-color: var(--accent-color);
 }
 .input-icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 8px;
+    left: 12px;
+    transition: fill 250ms linear;
 }
 .modal-form-field {
     font-size: 12px;
