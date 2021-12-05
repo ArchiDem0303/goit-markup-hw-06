@@ -364,9 +364,23 @@
             <div class="modal">
                 <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                     <form action="#" class="modal-form">
-                        <input type="text" name="user-name" class="modal-input"/>
-                        <input type="text" name="user-email" class="modal-input"/>
-                        <input type="text" name="user-tel" class="modal-input"/>
+                        <label for="modal-form-text">
+                            Имя
+                        <input type="text" name="user-name" class="modal-input" required/>
+                        </label>
+                        <label for="modal-form-text">
+                            Телефон
+                        <input type="tel"
+                         name="user-tel" 
+                         class="modal-input" 
+                         title="+38 (098) 111-11-11"
+                         placeholder="+38 (098) 111-11-11"
+                         required pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"/>
+                        </label>
+                        <label for="modal-form-text">
+                            Почта
+                            <input type="email" name="user-email" class="modal-input" />
+                        </label>
                         <button type="submit">Отправить</button>
                     </form>
                 <button type="button" class="modal-close" data-modal-close>
