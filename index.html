@@ -358,6 +358,23 @@
                             </li>
                         </ul>
                 </div>
+                <div class="footer-form-container">
+                    <form class="footer-form">
+                        <label class="footer-form-field">
+                            <span class="footer-form-label">Подпишитесь на рассылку</span>
+                            <input type="mail" class="footer-form-input" name="mail" placeholder="Email" />
+                            </label>
+                            <button class="button footer-button">
+                                <svg class="footer-form-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-send"></use>
+                                </svg>
+                                Подписаться
+                            </button>
+                            </form>
+                            </div>
+                        </label>
+                    </form>
+                </div>
             </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>
@@ -403,9 +420,8 @@
                             <textarea name="user-text" id="user-text" class="modal-text" placeholder="Введите текст"></textarea>
                         </div>
                             <div class="checkbox-field">
-                                <input type="checkbox" name="policy" id="modal-check" class="modal-check"/>
-                                <label for="modal-check" class="check-text">Соглашаюсь с рассылкой и принимаю <a class="policy-contract" href="">Условия договора</a></label>
-
+                                <input type="checkbox" name="policy" id="modal-check" class="modal-check visually-hidden"/>
+                                <label for="modal-check" class="check-text"><span><svg class="icon-check" width="16" height="15"><use href="./images/icons.svg#icon-check"></use></svg></span>Соглашаюсь с рассылкой и принимаю <a class="policy-contract" href="">Условия договора</a></label>
                             </div>
                         <button type="submit" class="btn-check"><span class="btn-check-text">Отправить</span></button>
                     </form>
